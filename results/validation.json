@@ -1,0 +1,8 @@
+{
+  "semantic_unit_tests": 8,
+  "saved_run_invariant_assertions": 440,
+  "complete_runs": 25,
+  "expected_active_player_rounds": 12080004,
+  "all_passed": true,
+  "scope": "practical Gaussian benchmark, independent implementation"
+}

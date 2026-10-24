@@ -1,0 +1,86 @@
+{
+  "horizon": 2000000,
+  "arms": 20,
+  "population_cap": 10,
+  "potential_players": 10,
+  "means": [
+    1.05,
+    1.0,
+    0.9500000000000001,
+    0.9,
+    0.85,
+    0.8,
+    0.75,
+    0.7000000000000001,
+    0.65,
+    0.6,
+    0.55,
+    0.5,
+    0.45000000000000007,
+    0.4,
+    0.35,
+    0.30000000000000004,
+    0.25,
+    0.2,
+    0.15000000000000002,
+    0.1
+  ],
+  "starts": [
+    1,
+    1,
+    1,
+    1,
+    80000,
+    80000,
+    80000,
+    80000,
+    1,
+    1
+  ],
+  "ends": [
+    100000,
+    100000,
+    100000,
+    100000,
+    2000000,
+    2000000,
+    2000000,
+    2000000,
+    2000000,
+    2000000
+  ],
+  "departure": 100000,
+  "seeds": [
+    7,
+    13,
+    29,
+    43,
+    71
+  ],
+  "methods": [
+    "PULSE",
+    "ACE",
+    "D-MC",
+    "UCB(2.0)",
+    "RD-UCB"
+  ],
+  "profile": "practical",
+  "reward": "gaussian",
+  "sigma": 0.5,
+  "practical": {
+    "confidence": 0.02,
+    "lp": 100,
+    "lq": 500,
+    "epsilon": 0.01
+  },
+  "schedule_inclusive": true,
+  "crn": "one independent Gaussian innovation per (seed, global round, player), shared across methods",
+  "rng": "NumPy PCG64 rewards; independent SeedSequence/xorshift64* private player actions",
+  "implementation": "independent-paper-implementation-v1",
+  "python": "3.10.9",
+  "numpy": "2.2.6",
+  "source_sha256": {
+    "simulator.py": "7e771c11687cd6e2bd1c3a04ce8cc5d33a5ef0777af4c08bbaa4d813ddc6124a",
+    "run_experiment.py": "f861a02af97ca3a074516000efae4d69c0e0ef83346760def114634964f4d264"
+  }
+}
